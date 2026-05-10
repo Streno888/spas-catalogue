@@ -500,6 +500,114 @@ body::before{
   font-size:10px;color:rgba(255,255,255,.2);
   letter-spacing:.1em;text-transform:uppercase;
 }
+
+/* ══════════════════════════════════════
+   MOBILE RESPONSIVE — max-width: 640px
+════════════════════════════════════════ */
+@media(max-width:640px){
+
+  /* GLOBAL */
+  .page{ max-width:100%; }
+  .section{ padding:48px 24px; }
+  .section-title{ font-size:32px !important; letter-spacing:-1px; margin-bottom:28px; }
+
+  /* COVER */
+  .cover-top{ padding:24px; flex-direction:column; gap:8px; }
+  .cover-issue{ text-align:left; }
+  .cover-body{ padding:32px 24px 16px; }
+  .cover-headline{ font-size:52px !important; letter-spacing:-2px; }
+  .cover-desc{ font-size:13px; max-width:100%; }
+  .cover-stats{
+    flex-direction:column; gap:0; margin-top:32px;
+  }
+  .cover-stat{
+    border-left:none !important;
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:16px 0 !important;
+  }
+  .cover-stat:first-child{ border-top:none; }
+  .stat-big{ font-size:36px; }
+  .cover-bottom{ padding:16px 24px; flex-direction:column; gap:8px; align-items:flex-start; }
+  .cover-slash{ width:70%; }
+
+  /* PROBLEM / SOLUTION */
+  .newspaper{
+    grid-template-columns:1fr !important;
+  }
+  .newspaper-divider{ display:none; }
+  .newspaper-col{ padding:0 !important; }
+  .newspaper-col:last-child{ margin-top:32px; padding-top:32px !important; border-top:1px solid var(--light-grey); }
+  .pi-num, .si-num{ font-size:18px; }
+
+  /* PULL QUOTE */
+  .pull-quote{ padding:36px 24px; }
+  .pq-text{ font-size:22px !important; }
+  .pull-quote::before{ font-size:140px; top:-10px; left:16px; }
+
+  /* PACKAGES */
+  .packages-grid{
+    grid-template-columns:1fr !important;
+    gap:1px;
+  }
+  .pkg{ padding:28px 24px; }
+  .pkg-price{ font-size:36px; letter-spacing:-2px; }
+  .pkg-name{ font-size:24px; }
+
+  /* TIMELINE */
+  .timeline{ padding-left:36px; }
+  .t-title{ font-size:18px; }
+  .t-body{ font-size:12px; max-width:100%; }
+
+  /* CITIES */
+  .city-grid{
+    grid-template-columns:1fr 1fr !important;
+  }
+  .city-name{ font-size:15px; }
+  .city-stat{ font-size:9px; }
+
+  /* SECTORS */
+  .sectors-wrap{
+    grid-template-columns:1fr !important;
+  }
+  .sector-block{ padding:20px; }
+  .s-num{ font-size:32px; width:40px; }
+  .s-name{ font-size:13px; }
+  .s-text{ font-size:11px; }
+
+  /* CTA */
+  .cta-section{
+    grid-template-columns:1fr !important;
+    padding:48px 24px;
+    gap:28px;
+  }
+  .cta-right{ text-align:left; }
+  .cta-headline{ font-size:36px !important; letter-spacing:-1px; }
+  .cta-contact{ font-size:12px; }
+
+  /* FOOTER */
+  .footer{
+    padding:20px 24px;
+    flex-direction:column;
+    gap:8px;
+    align-items:flex-start;
+  }
+}
+
+/* ══ TABLET — 641px to 900px ══ */
+@media(min-width:641px) and (max-width:900px){
+  .cover-headline{ font-size:64px !important; }
+  .cover-body{ padding:40px 36px 20px; }
+  .cover-top{ padding:28px 36px; }
+  .cover-bottom{ padding:18px 36px; }
+  .section{ padding:56px 36px; }
+  .packages-grid{ grid-template-columns:1fr 1fr !important; }
+  .city-grid{ grid-template-columns:1fr 1fr !important; }
+  .cta-section{ padding:64px 36px; }
+  .footer{ padding:20px 36px; }
+  .newspaper-col{ padding:0 20px; }
+  .newspaper-col:first-child{ padding-left:0; }
+  .newspaper-col:last-child{ padding-right:0; }
+}
 </style>
 </head>
 <body>
